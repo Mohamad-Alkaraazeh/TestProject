@@ -3,15 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Webpage</title>
-<link rel="stylesheet" type="text/css" href="Style.css">
+<title>E-commerce Webpage</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-<button id="changeColorButton">Change Color</button>
-<h1>Hello World</h1>
+<header>
+  <h1>E-commerce Webpage</h1>
+</header>
 
-<script src="app.js"></script>
+<main>
+  <section id="products">
+    <h2>Products</h2>
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$10</p>
+      <button class="addToCartButton" data-price="10">Add to Cart</button>
+    </div>
+    <!-- Add more product listings as needed -->
+  </section>
+
+  <section id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: <span id="cartTotal">$0</span></p>
+    <button id="checkoutButton">Checkout</button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 E-commerce Webpage</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
